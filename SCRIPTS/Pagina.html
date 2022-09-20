@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/utilities/flex/#enable-flex-behaviors">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    .buscar {
+      position: absolute;
+      right: 0px;
+      width: 300px;
+      padding: 20px;
+      }
+    .cards{
+        padding:0 !important;
+        margin-right: 0 !important;
+        margin-left:0 !important;
+ 
+    }
+    </style>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-md bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Codo a Codo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" <style="color:black;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" >Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-muted">Desactivado</a>
+        </li>
+      </ul>
+      <form class="buscar d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+<div class="card-group">
+  <div class="card">
+    <img src="C:\Users\valda\Documents\INTEGRADOR\IMAGE\htmlnaranja.png" class="card-img-top" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">titulo 1</h5>
+      <p class="card-text">Contenido de Card</p>
+      <p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="C:\Users\valda\Documents\INTEGRADOR\IMAGE\htmlazul.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">titulo 2</h5>
+      <p class="card-text">Contenido de Card</p>
+      <p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="C:\Users\valda\Documents\INTEGRADOR\IMAGE\htmlvioleta.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">titulo 3</h5>
+      <p class="card-text">Contenido de Card</p>
+      <p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
+    </div>
+  </div>
+</div>
+ <form>
+  <div class="col-12 d-flex flex-column mb-3">
+  <div class="d-flex flex-column mb-3" >
+    <label for="exampleInputEmail1" class="form-label"><div align="left">Email</label></div>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text" align="left">Nunca comparta su email.</div>
+  </div>
+  <div class="d-flex flex-column mb-3">
+    <label for="exampleInputPassword1" class="form-label" ><div align="left">Contraseña</label></div>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="d-flex flex-column mb-3 form-check" align="left">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Verificar</label>
+  </div>
+  <div  align="left">
+  <button type="submit" class="btn btn-primary" >Enviar</button>
+  </div>
+</form>
+</main>
+</div>
+</body>
+</html>
