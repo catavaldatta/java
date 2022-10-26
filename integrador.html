@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Integrador</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <style>
+      .cartas {
+       justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="integrador.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark">
+          <div class="container-fluid">
+            <div class="nav">
+            <a class="navbar-brand" style="color:#fcfcfc" href="index.HTML">Conf Bs As</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color:black;"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse buscar d-flex flex-row-reverse"  id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"  style="color:#fcfcfc">La conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#818281">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" style="color:#818281">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color:#818281" >Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#07a634" >Comprar tickets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+     </header>
+
+     <main> 
+      <div class=" row row-cols-1 row-cols-md-3 g-4 cartas d-flex justify-content-center"  align="center">
+        <div class="col-md-3 " style="padding-top: 20px; padding-bottom: 30px; padding-left: 5%;">
+          <div class="card border-primary" style="max-width: 18rem; border-radius: 0%; width: 350px; height: 250px ;">
+            <div class="card-body " style="padding-top: 50px;">
+              <h5 class="card-title" align="center">Estudiante</h5>
+              <p class="card-text" align="center">Tienen un descuento</p>
+              <h5 class="card-title" align="center">80%</h5>
+              <p class="card-text" align="center">* presentar documentación</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding-top: 20px; padding-bottom: 30px; ">
+          <div class="card border-success" style="max-width: 18rem; border-radius: 0%; width: 350px; height: 250px ;">
+            <div class="card-body"  style="padding-top: 50px;">
+              <h5 class="card-title" align="center">Trainee</h5>
+              <p class="card-text" align="center">Tienen un descuento</p>
+              <h5 class="card-title" align="center">50%</h5>
+              <p class="card-text" align="center">* presentar documentación</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" style="padding-top: 20px; padding-bottom: 30px; padding-right: 10%; ">
+          <div class="card border-warning" style="max-width: 18rem; border-radius: 0%; width: 350px; height: 250px ;">
+            <div class="card-body"  style="padding-top: 50px;">
+              <h5 class="card-title" align="center">Junior</h5>
+              <p class="card-text" align="center">Tienen un descuento</p>
+              <h5 class="card-title" align="center">15%</h5>
+              <p class="card-text" align="center">* presentar documentación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" style="font-size: 1.5ch;">VENTA</div>
+      <div class="d-flex justify-content-center"><h1 >VALOR DE TICKET $200</h1></div>
+      
+
+      <form>
+        <div class="row g-3 d-flex justify-content-center">
+        <div class="col-md-4"  style="padding-bottom: 20px;">
+          <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col-md-4" style="padding-bottom: 20px;">
+          <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+        </div>
+        <div class="row g-3 d-flex justify-content-center">
+        <div class="col-md-8"  style="padding-bottom: 20px;">
+          <input type="text" class="form-control" id="correo" placeholder="Correo">
+          <div class="my-2 px-2 rounded " id="msjUsu"></div>
+        </div>
+        </div>
+        <div class="row g-3 d-flex justify-content-center">
+        <div class="col-md-4" style="padding-bottom: 20px;">
+          <label for="inputAddress2" class="form-label">Cantidad</label>
+          <input type="number" min="0" class="form-control" id="cantidad" placeholder="Cantidad">
+        </div>
+        <div class="col-md-4" style="padding-bottom: 20px;">
+          <label for="inputState" class="form-label">Categoria</label>
+          <select id="inputCategoria" type="text" class="form-control" id="categoria" placeholder="Categoria">
+            <option selected>Elige una opción</option>
+            <option>Estudiante</option>
+            <option>Trainee</option>
+            <option>Junion</option>
+          </select>
+        </div>
+        </div>
+      </form>
+
+      <div class="d-flex justify-content-center" style="padding-bottom: 20px">
+      <div class="col-md-8 " id="monto" style="background-color: #CCE5FF; padding: 10px; border-radius: 5px;">Total a pagar: $</div>
+      </div>
+
+      <div class="d-flex justify-content-center" style="padding: 20px">
+      <button type="button" class="btn btn-primary btn-lg col-md-4" style="background-color: #97C93E; border: none; " >Borrar</button>
+      <div style="color: #ffff;">111</div>
+      <button type="button" class="btn btn-secondary btn-lg col-md-4" onclick="total()" onclick="validarUsu()" style="background-color: #97C93E; border: none; ">Resumen</button>
+    </div>
+
+     </main>
+     <footer>
+
+      <div class="row align-items-start" style="background: linear-gradient(to right, #1a3644, #1c5272);">
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;" align="center"><a class="nav-link active" aria-current="page" >Preguntas frecuentes</a></div>
+        <div class="col-md-1" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;"  align="center"><a class="nav-link active" aria-current="page" >Contáctanos</a></div>
+        <div class="col-md-1" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;"  align="center"><a class="nav-link active" aria-current="page" >Prensa</a></div>
+        <div class="col-md-1" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;"  align="center"><a class="nav-link active" aria-current="page" >Conferencias</a></div>
+        <div class="col-md-2" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;"  align="center"><a class="nav-link active" aria-current="page" >Términos y condiciones</a></div>
+        <div class="col-md-1" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;"  align="center"><a class="nav-link active" aria-current="page" >Privacidad</a></div>
+        <div class="col-md-1" style="color: #fcfcfc; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;"  align="center"><a class="nav-link active" aria-current="page" >Estudiantes</a></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+      </div>
+    
+     </footer>
+   </body>
+</html>
